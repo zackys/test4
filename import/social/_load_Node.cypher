@@ -1,5 +1,5 @@
 LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/zackys/test4/master/import/social/Person.csv" AS line
-CREATE (:Person {personId:line.id, name:line.name})
+CREATE (:Person {personId:line.id, name:line.name, age:line.age})
 UNION
 LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/zackys/test4/master/import/social/Company.csv" AS line
 CREATE (:Company {companyId:line.id, name:line.name})
