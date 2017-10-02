@@ -48,9 +48,11 @@ Enterprise版とCommunity版がありますが、Community版をインストー�
 * ブラウザを起動し、http://localhost:7474 へアクセスする
 * 以下のような画面が表示されるので、password欄に「neo4j」と入力し、「Connect」ボタンを押下する
 ![inst01](https://user-images.githubusercontent.com/5683857/31061618-1db38b78-a75e-11e7-94a5-9392be101607.jpg)
-* パスワードの変更を求められるので、任意のパスワードに変更する
+* 以下のような画面が表示されるので、新しいpasswordを入力し、「Change password」ボタンを押下する
   * この時の「ユーザー」と「パスワード」はハンズオンで使用するので、覚えておく
+![inst02](https://user-images.githubusercontent.com/5683857/31061685-c411563a-a75e-11e7-92f9-f511ef5b902d.jpg)
 * 以下のような画面が表示されたら、完了です。
+![inst03](https://user-images.githubusercontent.com/5683857/31061754-68799138-a75f-11e7-9f42-577e7c3c57ce.jpg)
 
 
 
