@@ -1,10 +1,10 @@
 # test4
 
-# 事前準備
+# 0. 事前準備
 
 ## Neo4jのインストールと動作確認
 
-### [システム要件](https://neo4j.com/docs/operations-manual/current/installation/requirements/)
+### ■[システム要件](https://neo4j.com/docs/operations-manual/current/installation/requirements/)
 
 * Java
   * OpenJDK 8 or Oracle Java 8
@@ -19,11 +19,11 @@
 * DISK:10GB SATA
   * SSD w/ SATA
 
-## Javaのインストール
+### ■Javaのインストール
 
 システム要件に記載のJavaをインストールし、PATHにjavaコマンドを通して下さい。
 
-### [Neo4jのインストール](https://neo4j.com/docs/operations-manual/current/installation/)
+### ■[Neo4jのインストール](https://neo4j.com/docs/operations-manual/current/installation/)
 
 Enterprise版とCommunity版がありますが、Community版をインストールして下さい。
 
@@ -42,7 +42,7 @@ Enterprise版とCommunity版がありますが、Community版をインストー�
   * Windows：2.4.2まで
 * Neo4jのサービス登録は、今回のハンズオンでは不要です。
 
-### 動作確認
+### ■動作確認
 
 * ブラウザを起動する
 * 「http://localhost:7474」へアクセスする
