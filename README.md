@@ -29,9 +29,9 @@ Enterprise版とCommunity版がありますが、Community版をインストー�
 
 以下のオンラインドキュメントに従い、インストールして下さい：
 
-Linux: https://neo4j.com/docs/operations-manual/current/installation/linux/tarball/
-MacOS: https://neo4j.com/docs/operations-manual/current/installation/osx/
-Windows: https://neo4j.com/docs/operations-manual/current/installation/windows/
+* Linux: https://neo4j.com/docs/operations-manual/current/installation/linux/tarball/
+* MacOS: https://neo4j.com/docs/operations-manual/current/installation/osx/
+* Windows: https://neo4j.com/docs/operations-manual/current/installation/windows/
 
 その他
 
