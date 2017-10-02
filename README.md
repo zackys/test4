@@ -7,8 +7,8 @@
 ### システム要件
 
 * Java
-** OpenJDK 8 or Oracle Java 8
-** IBM Java 8
+  * OpenJDK 8 or Oracle Java 8
+  * IBM Java 8
 
 以下、オンラインドキュメントのハードウェア要件を転記します。
 推奨値も併記しますが、今回のハンズオンではそこまでのスペックは必要ないと思います。
