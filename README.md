@@ -21,9 +21,9 @@
 
 ## Javaのインストール
 
-システム要件のJavaをインストールし、PATHにjavaコマンドを通して下さい。
+システム要件に記載のJavaをインストールし、PATHにjavaコマンドを通して下さい。
 
-### Neo4jのインストール
+### [Neo4jのインストール](https://neo4j.com/docs/operations-manual/current/installation/)
 
 Enterprise版とCommunity版がありますが、Community版をインストールして下さい。
 
