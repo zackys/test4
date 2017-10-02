@@ -4,7 +4,7 @@
 
 ## Neo4jのインストールと動作確認
 
-### システム要件
+### [システム要件](https://neo4j.com/docs/operations-manual/current/installation/requirements/)
 
 * Java
   * OpenJDK 8 or Oracle Java 8
