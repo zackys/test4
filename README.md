@@ -2,7 +2,9 @@
 
 # 0. 事前準備
 
-## Neo4jのインストールと動作確認
+以下の01～03まで行ってください。
+
+## 01. Neo4jのインストールと動作確認
 
 ### ■[システム要件](https://neo4j.com/docs/operations-manual/current/installation/requirements/)
 
@@ -54,7 +56,7 @@ Enterprise版とCommunity版がありますが、Community版をインストー�
 * 以下のような画面が表示されたら、完了です。
 ![inst03](https://user-images.githubusercontent.com/5683857/31061754-68799138-a75f-11e7-9f42-577e7c3c57ce.jpg)
 
-## GitHubプロジェクトのclone
+## 02. GitHubプロジェクトのclone
 
 以下のプロジェクトをローカルへcloneして下さい。
 
@@ -70,7 +72,7 @@ Enterprise版とCommunity版がありますが、Community版をインストー�
       その際、クエリをタイプする代わりにPDFファイルの内容をコピーして下さい。
 
 
-## サンプルアプリケーションのインポート
+## 03. サンプルアプリケーションのインポート
 
 プロジェクト直下の「sample01」をMavenプロジェクトとして、開発環境へインストールして下さい。
 
