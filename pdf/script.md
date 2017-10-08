@@ -109,7 +109,7 @@ MATCH (n:Person {name:"香川"})
 11.
 ```
 MATCH (n:Person {name:"香川"})
- SET n.from = "兵庫"
+ SET n.from = "神戸"
 ```
 ---
 
@@ -136,7 +136,7 @@ MATCH (x:Person {name:"香川"})-[r]->
  DELETE r
 ```
 
-11.
+13.
 ```
 MATCH (n:Person {name:"香川"})
  DELETE n
