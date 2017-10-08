@@ -8,8 +8,22 @@ Cypherクエリの実行は、「Neo4j Browser」を使って行います。
   * Neo4jのコンソールアプリケーション(Neo4jサーバ)を起動
   * http://localhost:7474 へアクセス
     * 認証画面が表示された場合は、以下を入力
-      * user:neo4j
+      * user:neo4j
       * password:インストール時に設定したパスワード
+
+---
+
+## Neo4j Browser（２）
+
+画面最上部の入力欄よりCypherクエリを入力していきます。
+
+画面右側の★印を押下して下さい。
+
+---
+
+## Neo4j Browser（１）
+
+---
 
 ## ステートメント - CREATE
 
