@@ -298,3 +298,18 @@ MATCH (i:Interest)<--(n:Person)
   RETURN i.name,         COLLECT(n.name)
 ```
 
+---
+
+## 集約関数 - COUNT
+
+4.
+```
+MATCH (i:Interest)<--(n:Person)
+  RETURN i.name,         COLLECT(n.name), COUNT(n.name)
+```
+
+5.
+```
+MATCH (i:Interest)<--(n:Person)
+  RETURN i.name,         COLLECT(n.name), COUNT(i.name)
+```
