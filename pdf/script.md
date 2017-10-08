@@ -276,8 +276,25 @@ CREATE (n1)-[:INTERESTED_IN]->(n2)
 MATCH p=(i:Interest)<--(n:Person) RETURN p
 ```
 
+1.
 ```
 MATCH (i:Interest)<--(n:Person) 
   RETURN i.name, n.name
+```
+
+---
+
+## 集約関数 - COLLECT
+
+2.
+```
+MATCH (i:Interest)<--(n:Person)
+  RETURN i.name, n.name, COLLECT(n.name)
+```
+
+3.
+```
+MATCH (i:Interest)<--(n:Person)
+  RETURN i.name,         COLLECT(n.name)
 ```
 
