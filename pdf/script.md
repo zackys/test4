@@ -1,5 +1,7 @@
 
-### 1
+### p31
+
+1
 
 ```
 CREATE (:Person {name:"長友", age:31})
@@ -14,6 +16,7 @@ CREATE (:Team {name:"日本代表"});
 
 ### 2
 
+2.
 ```
 MATCH (n) RETURN n
 ```
@@ -28,6 +31,5 @@ MATCH (n:Person) RETURN n.name, n:age, n.job
 
 ```
 MATCH (n:Person {age:32}) RETURN n.name AS name
-
 ```
 
