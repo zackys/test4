@@ -342,3 +342,28 @@ MATCH (i:Interest)<--(n:Person)
            ORDER BY rank DESC
 ```
 
+---
+
+## LIMIT 句
+
+9.
+```
+MATCH (i:Interest)<--(n:Person)
+  RETURN i.name AS intr, COUNT(i.name) AS rank
+           ORDER BY rank DESC
+           LIMIT 3
+```
+
+---
+
+## WITH 句を使い、クエリを整理
+
+10.
+```
+MATCH (i:Interest)<--(n:Person)
+  WITH i.name AS intr
+  RETURN intr, COUNT(intr) AS rank
+           ORDER BY rank DESC
+           LIMIT 3
+```
+
