@@ -21,8 +21,10 @@ Cypherクエリの実行は、「Neo4j Browser」を使って行います。
 ```
 MATCH (n) RETURN n
 ```
+⇒Nodeを全検索するクエリです。（まだ何も返らないはず）
 
 * 「↑」キーを押下
+⇒１つ前の入力（MATCH (n) RETURN n）が表示されます
 
 
 ---
