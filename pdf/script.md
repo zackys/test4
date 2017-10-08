@@ -133,7 +133,6 @@ CREATE (taira)-[:KNOWS]->(sanpei)
 CREATE (nagatomo)-[:MEMBER_OF {since:2011}]->(intel)
 CREATE (nagatomo)-[:MEMBER_OF {at:[2010,2014]}]->(japan)
 CREATE (honda)-[:MEMBER_OF {at:[2010,2014]}]->(japan)
-CREATE (honda)-[:MEMBER_OF {at:[2010,2014]}]->(japan)
 CREATE (gagl)-[:MEMBER_OF {since:2017}]->(intel)
 ```
 
