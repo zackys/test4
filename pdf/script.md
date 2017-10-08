@@ -93,3 +93,21 @@ CREATE (nagatomo)-[:MEMBER_OF {since:2011}]->(intel)
 CREATE (nagatomo)-[:MEMBER_OF {at:[2010,2014]}]->(japan)
 CREATE (honda)-[:MEMBER_OF {at:[2010,2014]}]->(japan)
 ```
+
+---
+
+## ステートメント - SET
+
+### p36
+
+9.
+```
+MATCH (n:Person {name:"香川"})
+ SET n.from = "兵庫"
+```
+
+10.
+```
+MATCH (n:Person {name:"香川"})
+ SET n.from = "兵庫"
+```
