@@ -100,14 +100,44 @@ CREATE (honda)-[:MEMBER_OF {at:[2010,2014]}]->(japan)
 
 ### p36
 
-9.
+10.
 ```
 MATCH (n:Person {name:"香川"})
  SET n.from = "兵庫"
 ```
 
-10.
+11.
 ```
 MATCH (n:Person {name:"香川"})
  SET n.from = "兵庫"
+```
+---
+
+## ステートメント - REMOVE
+
+### p37
+
+12.
+```
+MATCH (n:Person {name:"香川"})
+ REMOVE n.from
+```
+
+---
+
+## ステートメント - DELETE
+
+### p37
+
+12.
+```
+MATCH (x:Person {name:"香川"})-[r]->
+      (y:Team {name:"ドルトムント"})
+ DELETE r
+```
+
+11.
+```
+MATCH (n:Person {name:"香川"})
+ DELETE n
 ```
