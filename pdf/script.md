@@ -73,3 +73,23 @@ MATCH (x:Person {name:"長友"}),
       (y:Person {name:"平"})
   CREATE (y)-[:MARRIED {at:2017}]->(x)
 ```
+
+---
+
+## ステートメント - CREATE（３）
+
+### p35
+
+9.
+```
+MATCH (nagatomo:Person {name:"長友"}),
+      (taira:Person {name:"平"}),
+      (sanpei:Person {name:"三瓶"}),
+      (honda:Person {name:"本田"}),
+      (japan:Team {name:"日本代表"}),
+      (intel:Team {name:"インテル"})
+CREATE (taira)-[:KNOWS]->(sanpei)
+CREATE (nagatomo)-[:MEMBER_OF {since:2011}]->(intel)
+CREATE (nagatomo)-[:MEMBER_OF {at:[2010,2014]}]->(japan)
+CREATE (honda)-[:MEMBER_OF {at:[2010,2014]}]->(japan)
+```
