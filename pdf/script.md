@@ -69,7 +69,7 @@ CREATE (:Person {name:"香川", age:28})
 ```
 8.
 ```
-MATCH (n:Person)
- WHERE n.age > 40
- RETURN n.name AS name, n.age AS age
+MATCH (x:Person {name:"長友"}),
+      (y:Person {name:"平"})
+  CREATE (y)-[:MARRIED {at:2017}]->(x)
 ```
