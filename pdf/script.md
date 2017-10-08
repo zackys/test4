@@ -263,3 +263,21 @@ LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/zackys/handson-neo
 MATCH (n1:Person {personId:line.personId}), (n2:Interest {interestId:line.interestId})
 CREATE (n1)-[:INTERESTED_IN]->(n2)
 ```
+
+---
+
+# ハンズオン - ソーシャル・グラフ
+
+---
+
+## ①パスの検索
+
+```
+MATCH p=(i:Interest)<--(n:Person) RETURN p
+```
+
+```
+MATCH (i:Interest)<--(n:Person) 
+  RETURN i.name, n.name
+```
+
