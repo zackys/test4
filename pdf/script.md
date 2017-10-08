@@ -36,3 +36,21 @@ MATCH (n:Person) RETURN n.name, n:age, n.job
 MATCH (n:Person {age:32}) RETURN n.name AS name
 ```
 
+---
+
+## ステートメント - WHERE
+
+### p32
+
+5.
+```
+MATCH (n:Person)
+ WHERE n.age = 32
+ RETURN n.name AS name, n.age AS age
+```
+6.
+```
+MATCH (n:Person)
+ WHERE n.age > 40
+ RETURN n.name AS name, n.age AS age
+```
