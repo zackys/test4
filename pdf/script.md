@@ -168,15 +168,27 @@ MATCH (n:Person {name:"香川"})
 
 ### p37
 
-12.
+13.
 ```
 MATCH (x:Person {name:"香川"})-[r]->
       (y:Team {name:"ドルトムント"})
  DELETE r
 ```
 
-13.
+14.
 ```
 MATCH (n:Person {name:"香川"})
  DELETE n
+```
+
+---
+
+## DELETE時の注意事項
+
+### p42
+
+15.
+```
+MATCH (n:Team {name:"ドルトムント"})
+ DETACH DELETE n
 ```
