@@ -324,5 +324,21 @@ MATCH (i:Interest)<--(n:Person)
   RETURN i.name, COUNT(i.name)
 ```
 
+---
 
+## ORDER BY 句
+
+7.
+```
+MATCH (i:Interest)<--(n:Person)
+  RETURN i.name, COUNT(i.name)
+           ORDER BY COUNT(i.name) DESC
+```
+
+8.
+```
+MATCH (i:Interest)<--(n:Person)
+  RETURN i.name AS intr, COUNT(i.name) AS rank
+           ORDER BY rank DESC
+```
 
