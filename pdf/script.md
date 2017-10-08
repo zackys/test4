@@ -47,6 +47,7 @@ CREATE (:Person {name:"長友", age:31})
 CREATE (:Person {name:"平", age:32})
 CREATE (:Person {name:"本田", age:31})
 CREATE (:Person {name:"三瓶", age:41, job:"芸人"})
+CREATE (:Person {name:"ガリアルディーニ", age:23})
 CREATE (:Team {name:"インテル"})
 CREATE (:Team {name:"日本代表"});
 ```
@@ -125,12 +126,15 @@ MATCH (nagatomo:Person {name:"長友"}),
       (taira:Person {name:"平"}),
       (sanpei:Person {name:"三瓶"}),
       (honda:Person {name:"本田"}),
+      (gagl:Person {name:"ガリアルディーニ"}),
       (japan:Team {name:"日本代表"}),
       (intel:Team {name:"インテル"})
 CREATE (taira)-[:KNOWS]->(sanpei)
 CREATE (nagatomo)-[:MEMBER_OF {since:2011}]->(intel)
 CREATE (nagatomo)-[:MEMBER_OF {at:[2010,2014]}]->(japan)
 CREATE (honda)-[:MEMBER_OF {at:[2010,2014]}]->(japan)
+CREATE (honda)-[:MEMBER_OF {at:[2010,2014]}]->(japan)
+CREATE (gagl)-[:MEMBER_OF {since:2017}]->(intel)
 ```
 
 ---
