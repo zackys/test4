@@ -17,7 +17,7 @@ CREATE (:Team {name:"日本代表"});
 
 ## ステートメント - MATCHとRETURN
 
-### p32
+### p31
 
 2.
 ```
@@ -49,6 +49,25 @@ MATCH (n:Person)
  RETURN n.name AS name, n.age AS age
 ```
 6.
+```
+MATCH (n:Person)
+ WHERE n.age > 40
+ RETURN n.name AS name, n.age AS age
+```
+
+---
+
+## ステートメント - CREATE（２）
+
+### p33
+
+7.
+```
+CREATE (:Person {name:"香川", age:28})
+          -[:MEMBER_OF]->
+       (:Team {name:"ドルトムント"})
+```
+8.
 ```
 MATCH (n:Person)
  WHERE n.age > 40
