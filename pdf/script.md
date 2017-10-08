@@ -48,6 +48,7 @@ CREATE (:Person {name:"三瓶", age:41, job:"芸人"})
 CREATE (:Team {name:"インテル"})
 CREATE (:Team {name:"日本代表"});
 ```
+ クエリ実行後、「MATCH (n) RETURN n」を実行してNodeの登録を確認する
 
 ---
 
