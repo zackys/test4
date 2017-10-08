@@ -195,3 +195,35 @@ MATCH (n:Person {name:"香川"})
 MATCH (n:Team {name:"ドルトムント"})
  DETACH DELETE n
 ```
+
+---
+
+## パスを使って検索する（１）
+
+### p49
+
+16.
+```
+MATCH (:Person {name:"長友"})-[:MARRIED]-(n)
+ RETURN n.name
+```
+
+---
+
+## パスを使って検索する（２）
+
+### p49
+
+17.
+```
+MATCH (:Person {name:"長友"})-[:MEMBER_OF]->
+    ()<-[:MEMBER_OF]-(n)
+  RETURN n.name
+```
+
+18.
+```
+MATCH (:Person {name:"長友"})-[:MEMBER_OF]->
+    (:Team {name:"日本代表"})<-[:MEMBER_OF]-(n)
+  RETURN n.name
+```
