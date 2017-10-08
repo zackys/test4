@@ -313,3 +313,16 @@ MATCH (i:Interest)<--(n:Person)
 MATCH (i:Interest)<--(n:Person)
   RETURN i.name,         COLLECT(n.name), COUNT(i.name)
 ```
+
+---
+
+## ②"趣味"ごとにパス数を集計
+
+6.
+```
+MATCH (i:Interest)<--(n:Person)
+  RETURN i.name, COUNT(i.name)
+```
+
+
+
