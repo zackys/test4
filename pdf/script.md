@@ -33,11 +33,6 @@ MATCH (n) RETURN n
 MATCH (n) DETACH DELETE n
 ```
 
-
----
-
-## Neo4j Browser（１）
-
 ---
 
 ## ステートメント - CREATE
