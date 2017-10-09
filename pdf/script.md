@@ -217,7 +217,7 @@ MATCH (:Person {name:"長友"})-[:MARRIED]-(n)
 17.
 ```
 MATCH (:Person {name:"長友"})-[:MEMBER_OF]->
-    ()<-[:MEMBER_OF]-(n)
+    (:Team)<-[:MEMBER_OF]-(n)
   RETURN n.name
 ```
 
