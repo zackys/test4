@@ -238,6 +238,10 @@ MATCH (:Person {name:"長友"})-[:MEMBER_OF]->
 
 ## 次章で使うデータのアップロード
 
+### p62
+
+データを全削除（MATCH (n) DETACH DELETE n）してから実行
+
 19.
 ```
 LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/zackys/handson-neo4j/master/import/social/Person.csv" AS line
@@ -276,6 +280,8 @@ CREATE (n1)-[:INTERESTED_IN]->(n2)
 
 ## ①パスの検索
 
+### p73
+
 ```
 MATCH p=(i:Interest)<--(n:Person) RETURN p
 ```
@@ -289,6 +295,8 @@ MATCH (i:Interest)<--(n:Person)
 ---
 
 ## 集約関数 - COLLECT
+
+### p74
 
 2.
 ```
@@ -306,6 +314,8 @@ MATCH (i:Interest)<--(n:Person)
 
 ## 集約関数 - COUNT
 
+### p75
+
 4.
 ```
 MATCH (i:Interest)<--(n:Person)
@@ -322,6 +332,8 @@ MATCH (i:Interest)<--(n:Person)
 
 ## ②"趣味"ごとにパス数を集計
 
+### p76
+
 6.
 ```
 MATCH (i:Interest)<--(n:Person)
@@ -331,6 +343,8 @@ MATCH (i:Interest)<--(n:Person)
 ---
 
 ## ORDER BY 句
+
+### p77
 
 7.
 ```
@@ -350,6 +364,8 @@ MATCH (i:Interest)<--(n:Person)
 
 ## LIMIT 句
 
+### p78
+
 9.
 ```
 MATCH (i:Interest)<--(n:Person)
@@ -361,6 +377,8 @@ MATCH (i:Interest)<--(n:Person)
 ---
 
 ## WITH 句を使い、クエリを整理
+
+### p79
 
 10.
 ```
