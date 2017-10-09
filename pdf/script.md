@@ -4,6 +4,8 @@
 
 ## Neo4j Browser（１）
 
+### p29
+
 Cypherクエリの実行は、「Neo4j Browser」を使って行います。
 
 * Neo4j Browserの起動手順
@@ -16,6 +18,8 @@ Cypherクエリの実行は、「Neo4j Browser」を使って行います。
 ---
 
 ## Neo4j Browser（２）
+
+### p30
 
 * 画面最上部の入力欄よりCypherクエリを入力していきます。
 
@@ -39,7 +43,7 @@ MATCH (n) DETACH DELETE n
 
 ## ステートメント - CREATE
 
-### p30
+### p31
 
 1.（以下の内容をコピーして入力欄へ貼り付ける）
 ```
@@ -57,7 +61,7 @@ CREATE (:Team {name:"日本代表"});
 
 ## ステートメント - MATCHとRETURN
 
-### p31
+### p32
 
 2.
 ```
@@ -80,7 +84,7 @@ MATCH (n:Person {age:32}) RETURN n.name AS name
 
 ## ステートメント - WHERE
 
-### p32
+### p33
 
 5.
 ```
@@ -99,7 +103,7 @@ MATCH (n:Person)
 
 ## ステートメント - CREATE（２）
 
-### p33
+### p36
 
 7.
 ```
@@ -118,7 +122,7 @@ MATCH (x:Person {name:"長友"}),
 
 ## ステートメント - CREATE（３）
 
-### p35
+### p37
 
 9.
 ```
@@ -140,7 +144,7 @@ CREATE (gagl)-[:MEMBER_OF {since:2017}]->(intel)
 
 ## ステートメント - SET
 
-### p36
+### p38
 
 10.
 ```
@@ -157,7 +161,7 @@ MATCH (n:Person {name:"香川"})
 
 ## ステートメント - REMOVE
 
-### p37
+### p39
 
 12.
 ```
@@ -169,7 +173,7 @@ MATCH (n:Person {name:"香川"})
 
 ## ステートメント - DELETE
 
-### p37
+### p40
 
 13.
 ```
@@ -188,7 +192,7 @@ MATCH (n:Person {name:"香川"})
 
 ## DELETE時の注意事項
 
-### p42
+### p41
 
 15.
 ```
@@ -200,7 +204,7 @@ MATCH (n:Team {name:"ドルトムント"})
 
 ## パスを使って検索する（１）
 
-### p49
+### p48
 
 16.
 ```
