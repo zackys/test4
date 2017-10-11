@@ -277,6 +277,8 @@ CREATE (n1)-[:INTERESTED_IN]->(n2)
 
 # ハンズオン - ソーシャル・グラフ
 
+![social01](https://user-images.githubusercontent.com/5683857/31471942-948e6464-af26-11e7-8005-6d7d244545a3.jpg)
+
 ---
 
 ## ①パスの検索
@@ -389,8 +391,4 @@ MATCH (i:Interest)<--(n:Person)
            ORDER BY rank DESC
            LIMIT 3
 ```
-
-# ハンズオン - ソーシャル・グラフ
-
-![social01](https://user-images.githubusercontent.com/5683857/31471942-948e6464-af26-11e7-8005-6d7d244545a3.jpg)
 
