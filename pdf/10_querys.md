@@ -130,13 +130,15 @@ MATCH (nagatomo:Person {name:"長友"}),
       (taira:Person {name:"平"}),
       (sanpei:Person {name:"三瓶"}),
       (honda:Person {name:"本田"}),
-      (gagl:Person {name:"ガリアルディーニ"}),
+      (kagawa:Person {name:"香川"}),
+      (gagl:Person {name:"ガリアルディーニ"}),
       (japan:Team {name:"日本代表"}),
       (intel:Team {name:"インテル"})
 CREATE (taira)-[:KNOWS]->(sanpei)
 CREATE (nagatomo)-[:MEMBER_OF {since:2011}]->(intel)
 CREATE (nagatomo)-[:MEMBER_OF {at:[2010,2014]}]->(japan)
 CREATE (honda)-[:MEMBER_OF {at:[2010,2014]}]->(japan)
+CREATE (kagawa)-[:MEMBER_OF {at:[2014]}]->(japan)
 CREATE (gagl)-[:MEMBER_OF {since:2017}]->(intel)
 ```
 クエリ実行後、お気に入りへ登録した「MATCH (n) RETURN n」を実行してRelationshipの作成を確認する
@@ -185,7 +187,7 @@ MATCH (x:Person {name:"香川"})-[r]->
 
 15.
 ```
-MATCH (n:Person {name:"香川"})
+MATCH (n:Team {name:"ドルトムント"})
  DELETE n
 ```
 
@@ -197,7 +199,11 @@ MATCH (n:Person {name:"香川"})
 
 16.
 ```
-MATCH (n:Team {name:"ドルトムント"})
+MATCH (n:Person {name:"香川"})
+        DELETE n
+```
+```
+MATCH (n:Person {name:"香川"})
  DETACH DELETE n
 ```
 
