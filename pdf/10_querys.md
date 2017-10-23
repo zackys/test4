@@ -255,7 +255,7 @@ MATCH (:Person {name:"長友"})-[:MEMBER_OF]->
 LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/zackys/handson-neo4j/master/import/social/Person.csv" AS line
   RETURN line
 ```
-※`RETURN line`は、JSON形式で返ります
+* ⇒ `RETURN line`は、JSON形式で返ります
 
 ```
 LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/zackys/handson-neo4j/master/import/social/Person.csv" AS line
