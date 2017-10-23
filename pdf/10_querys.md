@@ -243,6 +243,43 @@ MATCH (:Person {name:"長友"})-[:MEMBER_OF]->
 
 ---
 
+## LOAD CSV を試す
+
+### p61
+
+20.
+* GitHub上のPerson.csvの内容を確認する
+
+https://github.com/zackys/handson-neo4j/blob/master/import/social/Person.csv
+
+20. ヘッダ付きCSVファイルのLOADと、各要素へのアクセス
+```
+LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/zackys/handson-neo4j/master/import/social/Person.csv" AS line
+  RETURN line
+```
+※「RETURN line」は、JSON形式で返ります
+
+```
+LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/zackys/handson-neo4j/master/import/social/Person.csv" AS line
+  RETURN line.id, line.name, line.age
+```
+※JSONの要素を参照する形式です
+
+20. 【参考】ヘッダなしCSVファイルのLOADと、各要素へのアクセス
+```
+LOAD CSV              FROM "https://raw.githubusercontent.com/zackys/handson-neo4j/master/import/social/Person.csv" AS line
+  RETURN line
+```
+※「RETURN line」は、(文字)配列形式で返ります
+
+```
+LOAD CSV              FROM "https://raw.githubusercontent.com/zackys/handson-neo4j/master/import/social/Person.csv" AS line
+  RETURN line[0], line[1], line[2]
+```
+※配列の要素を参照する形式です
+
+---
+
 ## 次章で使うデータのアップロード
 
 ### p61
