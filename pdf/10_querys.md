@@ -252,7 +252,7 @@ MATCH (:Person {name:"長友"})-[:MEMBER_OF]->
 #### 21. GitHub上のPerson.csvの内容を確認する
 * https://github.com/zackys/handson-neo4j/blob/master/import/social/Person.csv
 
-#### 22. ヘッダ付きCSVファイルのLOADと、各要素へのアクセス
+#### 22. ヘッダ付きCSVファイルのLOADと、行要素へのアクセス
 ```
 LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/zackys/handson-neo4j/master/import/social/Person.csv" AS line
   RETURN line
@@ -265,12 +265,12 @@ LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/zackys/handson-neo
 ```
  ⇒ `line.id`などは、JSONの要素を参照する形式です
 
-#### 23. 【参考】ヘッダなしCSVファイルのLOADと、各要素へのアクセス
+#### 23. 【参考】ヘッダなしCSVファイルとして読み込んだ場合、どうなるか？
 ```
 LOAD CSV              FROM "https://raw.githubusercontent.com/zackys/handson-neo4j/master/import/social/Person.csv" AS line
   RETURN line
 ```
- ⇒ `RETURN line`は、(文字)配列形式で返ります
+ ⇒ `RETURN line`は、(文字)配列形式で返ります。（読み込んだファイルがヘッダありのため、ヘッダもデータ行として読み込まれます。）
 
 ```
 LOAD CSV              FROM "https://raw.githubusercontent.com/zackys/handson-neo4j/master/import/social/Person.csv" AS line
