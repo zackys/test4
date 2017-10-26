@@ -265,7 +265,7 @@ LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/zackys/handson-neo
 ```
  ⇒ `line.id`などは、JSONの要素を参照する形式です
 
-#### 23. 【参考】ヘッダなしCSVファイルとして読み込んだ場合、どうなるか？
+#### 23. 【参考】同じファイルを"ヘッダなしCSVファイル"として読み込んだ場合、どうなるか？
 ```
 LOAD CSV              FROM "https://raw.githubusercontent.com/zackys/handson-neo4j/master/import/social/Person.csv" AS line
   RETURN line
