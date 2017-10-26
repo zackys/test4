@@ -4,7 +4,7 @@
 
 ## Neo4j Browser（１）
 
-### p48
+### p49
 
 Cypherクエリの実行は、「Neo4j Browser」を使って行います。
 
@@ -19,7 +19,7 @@ Cypherクエリの実行は、「Neo4j Browser」を使って行います。
 
 ## Neo4j Browser（２）
 
-### p49
+### p50
 
 * 画面最上部の入力欄よりCypherクエリを入力していきます。
 
@@ -43,7 +43,7 @@ MATCH (n) DETACH DELETE n
 
 ## ステートメント - CREATE
 
-### p50
+### p51
 
 1.（以下の内容をコピーして入力欄へ貼り付ける）
 ```
@@ -61,7 +61,7 @@ CREATE (:Team {name:"日本代表"})
 
 ## ステートメント - MATCHとRETURN
 
-### p51
+### p52
 
 2.
 ```
@@ -84,7 +84,7 @@ MATCH (n:Person {age:32}) RETURN n.name AS name
 
 ## ステートメント - WHERE
 
-### p52
+### p53
 
 6.
 ```
@@ -103,7 +103,7 @@ MATCH (n:Person)
 
 ## ステートメント - CREATE（２）
 
-### p53・54
+### p54・55
 
 8.
 ```
@@ -122,7 +122,7 @@ MATCH (x:Person {name:"長友"}),
 
 ## ステートメント - CREATE（３）
 
-### p55
+### p56
 
 10.
 ```
@@ -147,7 +147,7 @@ CREATE (gagl)-[:MEMBER_OF {since:2017}]->(intel)
 
 ## ステートメント - SET
 
-### p56
+### p57
 
 11.
 ```
@@ -164,7 +164,7 @@ MATCH (n:Person {name:"香川"})
 
 ## ステートメント - REMOVE
 
-### p57
+### p58
 
 13.
 ```
@@ -176,7 +176,7 @@ MATCH (n:Person {name:"香川"})
 
 ## ステートメント - DELETE
 
-### p58
+### p59
 
 14.
 ```
@@ -195,7 +195,7 @@ MATCH (n:Team {name:"ドルトムント"})
 
 ## DELETE時の注意事項
 
-### p59
+### p60
 
 16.
 ```
@@ -213,7 +213,7 @@ MATCH (n:Person {name:"香川"})
 
 ## パスを使って検索する（１）
 
-### p69
+### p70
 
 18.
 ```
@@ -225,7 +225,7 @@ MATCH (:Person {name:"長友"})-[:MARRIED]-(n)
 
 ## パスを使って検索する（２）
 
-### p70
+### p71
 
 19.
 ```
@@ -247,7 +247,7 @@ MATCH (:Person {name:"長友"})-[:MEMBER_OF]->
 
 ## LOAD CSV を試す
 
-### p83
+### p84
 
 #### 21. GitHub上のPerson.csvの内容を確認する
 * https://github.com/zackys/handson-neo4j/blob/master/import/social/Person.csv
@@ -282,7 +282,7 @@ LOAD CSV              FROM "https://raw.githubusercontent.com/zackys/handson-neo
 
 ## 次章で使うデータのアップロード
 
-### p84
+### p85
 
 データを全削除（MATCH (n) DETACH DELETE n）してから実行
 
@@ -326,7 +326,7 @@ CREATE (n1)-[:INTERESTED_IN]->(n2)
 
 ## Warm Up
 
-### p91
+### p92
 
 (1)「Benの年齢は？」
 
@@ -338,7 +338,7 @@ CREATE (n1)-[:INTERESTED_IN]->(n2)
 
 ## ①パスの検索
 
-### p95
+### p96
 
 0. 
 ```
@@ -355,7 +355,7 @@ MATCH (i:Interest)<--(n:Person)
 
 ## 集約関数 - COLLECT
 
-### p96
+### p97
 
 2.
 ```
@@ -373,7 +373,7 @@ MATCH (i:Interest)<--(n:Person)
 
 ## 集約関数 - COUNT
 
-### p97
+### p98
 
 4.
 ```
@@ -391,7 +391,7 @@ MATCH (i:Interest)<--(n:Person)
 
 ## ②"趣味"ごとにパス数を集計
 
-### p98
+### p99
 
 6.
 ```
@@ -403,7 +403,7 @@ MATCH (i:Interest)<--(n:Person)
 
 ## ORDER BY 句
 
-### p99
+### p100
 
 7.
 ```
@@ -423,7 +423,7 @@ MATCH (i:Interest)<--(n:Person)
 
 ## LIMIT 句
 
-### p100
+### p101
 
 9.
 ```
@@ -437,7 +437,7 @@ MATCH (i:Interest)<--(n:Person)
 
 ## WITH 句を使い、クエリを整理
 
-### p101
+### p102
 
 10.
 ```
@@ -452,7 +452,7 @@ MATCH (i:Interest)<--(n:Person)
 
 ## 共通の関心事を持つ同僚は？
 
-### p102・103
+### p103・104
 
 ①"Ben"と共通の関心事を持つ同僚は？
 ```
